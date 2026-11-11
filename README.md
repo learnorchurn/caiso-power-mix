@@ -4,9 +4,13 @@
 
 Move through a saved day of CAISO readings to see the reported supply mix, battery charging and discharging, and net imports. The explorer keeps source dates, signed values, and coverage visible so someone can inspect the result and understand its limits.
 
-**[Try the original live demo](https://www.richcouch.com/lab/index.html#power)** · **[Richard's portfolio](https://www.richcouch.com/)** · **[Enterprise analytics work](https://www.richcouch.com/impact/pge-analytics)**
+**[Try the original online demo](https://www.richcouch.com/lab/index.html#power)** · **[Richard's portfolio](https://www.richcouch.com/)** · **[Enterprise analytics work](https://www.richcouch.com/impact/pge-analytics)**
 
 This is a focused, independently runnable extraction of the power view in my Live Data Lab. It is a personal demonstration using public data.
+
+[![CAISO power-mix explorer in the original Live Data Lab, showing signed supply and battery readings at 20:00 Pacific on November 9, 2026.](power-mix-preview.jpg)](https://www.richcouch.com/lab/index.html#power)
+
+*Power view in the original Live Data Lab, showing saved November 9, 2026 readings at 20:00 Pacific. This repository contains a separate, runnable copy with a dated snapshot.*
 
 ## My role
 
@@ -16,10 +20,10 @@ The work sample shows the brief, the working result, and the decisions that make
 
 ## Try it in a minute
 
-1. Open the demo or run this copy locally.
+1. Open the [original online demo](https://www.richcouch.com/lab/index.html#power), or [run this copy locally](#run-locally). The online demo and this saved copy may show different dates.
 2. Keep **Completed day** selected and move the time slider from 15:00 toward 20:00. Watch solar, batteries, imports, and natural gas change. The slider also works with keyboard arrow keys.
-3. Expand **Sources, definitions & coverage** to see the observation date, retrieval time, original CSV links, and missing-data rules.
-4. Select **Saved latest snapshot** to inspect the separately dated partial day. It contains only readings saved at fetch time.
+3. Check the displayed observation date and fetch time. Expand **Sources, definitions & coverage** for the original CSV links, coverage, and missing-data rules.
+4. Select **Latest readings** in the online demo, or **Saved latest snapshot** in this copy, to inspect the separately dated current-feed snapshot when available. It contains only readings saved at fetch time and may cover a partial day.
 
 The bundled complete day is **November 9, 2026**, with **288 five-minute intervals**. The optional current-feed snapshot is **November 10, 2026, through 15:15 Pacific**, with 184 intervals. Both were fetched on November 10. This repository has no automatic refresh schedule. Its included data will become historical; the dates remain visible.
 
@@ -91,3 +95,4 @@ The source is **[CAISO Today's Outlook](https://www.caiso.com/todays-outlook/sup
 **Directed by Richard Couch. Built with Codex.** This extraction retains the original power renderer and fetcher, with a focused page shell and loading/navigation code. Source-data attribution and links remain in the data and interface.
 
 No open-source license has been selected for this repository. See [NOTICE.md](NOTICE.md) for scope and third-party data attribution.
+
